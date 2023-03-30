@@ -15035,6 +15035,8 @@ GameObject:
   - component: {fileID: 7322629647259526228}
   - component: {fileID: 7322629647259526231}
   - component: {fileID: 7322629647259526230}
+  - component: {fileID: 7055473154163216149}
+  - component: {fileID: 8806466448360743014}
   m_Layer: 8
   m_Name: EnemyShip
   m_TagString: Enemy
@@ -15407,7 +15409,7 @@ MonoBehaviour:
           name: ENEMY_DESTROY
           isSystemEvent: 0
           isGlobal: 0
-        toState: Destroyed
+        toState: AddScore
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -15598,8 +15600,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 309
-        y: 295
+        x: 523
+        y: 309
         width: 100
         height: 16
       isBreakpoint: 0
@@ -15668,6 +15670,100 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 000000000000000001000000
         paramByteDataSize: 000000000000000000000000
+    - name: AddScore
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 299
+        y: 339
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Destroyed
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.SequenceEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 603dd90503da1f00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams:
+        - useVariable: 1
+          name: score
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1000000010000000010000000f00000011000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        - delay
+        - reset
+        paramDataPos: 0000000001000000000000000000000000000000
+        paramByteDataSize: 0000000000000000010000000000000000000000
     events:
     - name: PLAYER_MOVING
       isSystemEvent: 0
@@ -15683,6 +15779,9 @@ MonoBehaviour:
       isGlobal: 0
     - name: ENEMY_DESTROY
       isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -15798,7 +15897,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!54 &7322629647259526230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15815,6 +15914,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &7055473154163216149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7322629647259526233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 845409985, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 7322629647259526231}
+--- !u!114 &8806466448360743014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7322629647259526233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1079068393, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 7322629647259526231}
 --- !u!1 &7322629647795604230
 GameObject:
   m_ObjectHideFlags: 0
