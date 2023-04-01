@@ -15278,18 +15278,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: GAME_STATE_START
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: GAME_STATE_OVER
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 0
         fsmBoolParams:
         - useVariable: 0
           name: 
