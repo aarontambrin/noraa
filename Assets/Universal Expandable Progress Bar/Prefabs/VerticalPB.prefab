@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4060669, b: 0.4060669, a: 1}
+  m_Color: {r: 1, g: 0.18058777, b: 0.18058777, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -242,7 +242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 22450810}
   - component: {fileID: 11404526}
-  - component: {fileID: 11407550}
   m_Layer: 0
   m_Name: VerticalPB
   m_TagString: Untagged
@@ -295,26 +294,3 @@ MonoBehaviour:
   isFull: 1
   finalColor: {r: 1, g: 0, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &11407550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46636e0b56789b14f8e07e5a36f644e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetScaleP: {x: 0, y: 0, z: 0}
-  appearTime: 1
-  appearTimeColor: 1
-  animatedBackground: {fileID: 11439444}
-  animatedProgress: {fileID: 11487884}
-  animateFill: 0
-  animateProg: 1
-  animateColor: 1
-  animateSize: 1
-  fromColor: {r: 1, g: 1, b: 1, a: 0}
-  toColor: {r: 1, g: 1, b: 1, a: 1}
