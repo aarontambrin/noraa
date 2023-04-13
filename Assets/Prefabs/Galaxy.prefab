@@ -5457,7 +5457,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 110000
+    maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -9699,7 +9699,7 @@ MonoBehaviour:
   starcollider: {fileID: 1295458053873810, guid: ad158da0ef18c2d46b41e8bdc52da8e3, type: 3}
   totalspiralparticles: 0
   totalcloudparticles: 0
-  numberofstars: 110000
+  numberofstars: 1000
   numberofspiralparticles: 32000
   numberofcloudparticles: 9000
   randomseed: 834573
@@ -9770,7 +9770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4752748219221164
 Transform:
   m_ObjectHideFlags: 0
