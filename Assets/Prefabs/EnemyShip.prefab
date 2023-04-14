@@ -15848,14 +15848,8 @@ MonoBehaviour:
         paramDataPos: 000000000100000000000000000000000000000000000000010000000200000001000000050000000000000001000000020000000100000002000000030000000300000000000000
         paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000004000000010000000000000000000000000000000000000000000000000000000000000000000000
     events:
-    - name: PLAYER_MOVING
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: PLAYER_IDLE
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: ENEMY_HIT
-      isSystemEvent: 0
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
     - name: ENEMY_CHASE
       isSystemEvent: 0
@@ -15863,8 +15857,14 @@ MonoBehaviour:
     - name: ENEMY_DESTROY
       isSystemEvent: 0
       isGlobal: 0
-    - name: FINISHED
-      isSystemEvent: 1
+    - name: ENEMY_HIT
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: PLAYER_IDLE
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: PLAYER_MOVING
+      isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -15950,7 +15950,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -15970,7 +15970,7 @@ MonoBehaviour:
     handleTriggerEnter: 0
     handleTriggerExit: 0
     handleTriggerStay: 0
-    handleCollisionEnter: 1
+    handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
     handleParticleCollision: 0
@@ -15979,7 +15979,7 @@ MonoBehaviour:
     handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
-    handleLateUpdate: 1
+    handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
     handleLegacyNetworking: 0
