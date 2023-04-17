@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 199129923094911164}
   - component: {fileID: 6959108784308340935}
   - component: {fileID: -8186880099549804844}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemySpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 4210780401982058}
   - component: {fileID: 198750466415239132}
   - component: {fileID: 199706076995283704}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}

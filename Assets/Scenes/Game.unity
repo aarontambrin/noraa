@@ -1910,7 +1910,7 @@ MonoBehaviour:
         - GAME_START
         - GAME_OVER
         - SPAWN_ENEMY
-        byteData: 0000
+        byteData: 0100
         arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
@@ -4946,7 +4946,7 @@ MonoBehaviour:
         - GAME_START
         - GAME_OVER
         - SPAWN_ENEMY
-        byteData: 0000
+        byteData: 0100
         arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt

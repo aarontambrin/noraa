@@ -24866,7 +24866,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - ENEMY_DESTROY
-        - 
+        - ENEMY_DESTROY
         - ENEMY_CHASE
         byteData: 000000
         arrayParamSizes: 
